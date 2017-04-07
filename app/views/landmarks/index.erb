@@ -1,0 +1,7 @@
+<h1>Check out these crazy landmarks!</h1>
+
+<% Landmark.all.each do |landmark| %>
+<ul>
+  <li><h3> <a href="/landmarks/<%= landmark.id %>/"> <%= landmark.name %>, <%= landmark.year_completed %></a></h3></li>
+</ul>
+  <% end %>
